@@ -17,4 +17,4 @@ Note:  I attempted using:
 * (1) the street and topography style of map, while basing my code on the Week 15 Day 1 exercises 09-Stu_City_Population_Layers and 10-Stu_GeoJson
 * (2) the start of a choropleth map, thinking that this better reflected the style of map shown in the challenge requirements, as was shown in Week 15 Day 2 exercise 04-Par_SchoolDistrictChoropleth.  I have since moved these choropleth versions to the Obsolete files folder. 
 
-However, I was not able to complete the maps in full, so I concentrated on the initial street and topography map. 
+However, I was not able to complete the maps in full, so I concentrated on the initial street and topography map. I was able to display a map with markers locally.

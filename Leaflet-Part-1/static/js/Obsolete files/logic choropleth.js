@@ -18,24 +18,11 @@ let geoData = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_wee
 d3.json(geoData).then(function(data) {
   console.log(data);
   // Create a new choropleth layer.
-  let geojson = L.choropleth(data, {
+  let geojson = L.choropleth(data)
 
-    // Define which property in the features to use.
-    valueProperty: "DP03-16E",
-    // Set the colour scale.
-    scale: ['yellow','red', 'purple'],
-    // The number of breaks in the step range
-    steps: 10,
-    // q for quartile, e for equidistant, k for k-means
-    mode: "q",
-    style: {
-      color: '#fff', // border color
-      weight: 2,
-      fillOpacity: 0.8
-    },
     // Binding a popup to each layer
     onEachFeature: function(feature, layer){
-      layer.bindPopup(feature.properties.NAME + feature.properties.DP03_16E)
+      layer.bindPopup(feature.properties. + feature.properties.)
      }}).addTo(myMap);
     // Set up the legend.
      let legend = L.control({position: "bottomright"});
@@ -46,7 +33,7 @@ d3.json(geoData).then(function(data) {
       let labels = [];
 
       // Add minimum and maximum.
-      let legendInfo = "<h1>Population with Children<br />)...... "
+      let legendInfo = "<h1>Earthquakes<br />)...... "
       "div class=\"labels\">" +
       "div class=\"min\">" + limits[0] + "</div>" +
       "div class=\"max\">" + limits[limits.length -1] + "</div>" +
